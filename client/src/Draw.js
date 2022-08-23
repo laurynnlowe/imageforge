@@ -1,6 +1,6 @@
 import React, {useState, useRef } from "react";
-import CanvasDraw from "react-canvas-draw";
-import { SketchPicker } from "react-color";
+// import CanvasDraw from "react-canvas-draw";
+// import { SketchPicker } from "react-color";
 import './index.css';
 
 
@@ -38,15 +38,15 @@ const Draw = () => {
                 <button onClick={closeColorPicker}>
                 Close Color Picker
                 </button>
-                <SketchPicker 
+                {/* <SketchPicker 
                     color={color}
                     onChange={(color => {
                         setColor(color.hex)
                     })}
-                />
+                /> */}
             </div>)}
             <div className="canvas">
-                <CanvasDraw  
+                {/* <CanvasDraw  
                     brushColor={color}   
                     brushRadius={brushSize} 
                     hideGrid={true}
@@ -54,7 +54,7 @@ const Draw = () => {
                     canvasWidth={700}
                     canvasHeight={500}
                     ref={imageRef}
-                />
+                /> */}
             </div>
             <button className="saveImage"
                 type="button"

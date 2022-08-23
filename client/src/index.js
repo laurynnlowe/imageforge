@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import AllPages from './AllPages';
+import Nav from "./Nav";
 import Draw from "./Draw";
+import Login from "./Login";
 import reportWebVitals from './reportWebVitals';
 import {
   ApolloProvider,
@@ -25,9 +27,10 @@ const client = new ApolloClient({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ApolloProvider client={client}>
-    <React.StrictMode>
-      <Draw />
-    </React.StrictMode>
+      <React.StrictMode>
+        {/* <Nav /> */}
+        <App />
+      </React.StrictMode>
   </ApolloProvider>
 );
 
